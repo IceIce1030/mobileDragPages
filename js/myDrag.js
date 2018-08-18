@@ -173,13 +173,14 @@ function dragenFun(id,c_height,c_width,type){
   // 判斷裝置宣告事件
   this.whatDevice = function(){
     var userAgent = navigator.userAgent;
+    console.log(userAgent)
     if(/Android/i.test(userAgent)){
       // 是否為Android
       this._addevent("android");
     }else if(/iPhone|iPad/i.test(userAgent)){
       // 是否為iPhone或iPad
       this._addevent("ios");
-    }else if(/Windows/i.test(userAgent)){
+    }else{
       // 使否是用電腦觀看
       this._addevent("pc");
     }

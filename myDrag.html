@@ -12,7 +12,7 @@
       list-style: none;
     }
     .container{
-      max-width: 960px;
+      height: 600px;
       margin: auto;
       outline: 1px solid #000;
     }
@@ -63,10 +63,10 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/myDrag.js"></script>
+  <script src="./js/myDrag.js"></script>
   <script>
     // id，高度，寬度，跳頁按鈕
-    var myDrag = new dragenFun('#myDrag',"100vh - 50px","");
+    var myDrag = new dragenFun('#myDrag',"600px - 50px");
     
     // 註冊menu事件
     $('.menu > div').on('click',function(){
